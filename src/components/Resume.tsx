@@ -7,45 +7,51 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 
 const Resume = () => {
-  // In a real application, you would replace these with your actual information
   const workExperience = [
     {
-      title: "Senior Front-end Developer",
-      company: "Tech Solutions Inc.",
-      period: "2020 - Present",
-      description: "Lead front-end development for client projects using React, TypeScript, and modern CSS frameworks. Collaborated with UX designers to implement responsive designs and interactive features.",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Next.js"]
+      title: "Data Science Consultant",
+      company: "TCG Digital",
+      period: "Sep 2023 - Present",
+      description: "Working on data science and machine learning projects, developing AI models, and performing advanced data analytics for clients across various industries.",
+      skills: ["Python", "TensorFlow", "Scikit-Learn", "Data Analysis", "Machine Learning"]
     },
     {
-      title: "Web Developer",
-      company: "Creative Agency",
-      period: "2018 - 2020",
-      description: "Developed and maintained client websites, implementing responsive designs and ensuring cross-browser compatibility. Worked closely with the design team to create engaging user experiences.",
-      skills: ["JavaScript", "HTML/CSS", "WordPress", "jQuery"]
+      title: "Project Assistant",
+      company: "University of Massachusetts Boston",
+      period: "Feb 2023 - May 2023",
+      description: "Implemented gaze tracking algorithms for multi-modal deep learning project using PyTorch and OpenCV, achieving over 90% accuracy in eye detection and gaze prediction.",
+      skills: ["PyTorch", "OpenCV", "Python", "Research", "Deep Learning"]
     },
     {
-      title: "Junior Developer",
-      company: "StartUp Solutions",
-      period: "2016 - 2018",
-      description: "Assisted in the development of web applications and websites. Responsible for bug fixes, feature implementations, and maintaining code quality.",
-      skills: ["JavaScript", "HTML/CSS", "Bootstrap"]
+      title: "Database Engineer Intern",
+      company: "Lynchval Systems",
+      period: "May 2023 - Aug 2023",
+      description: "Developed and maintained database systems, created ETL processes, and built data pipelines for financial applications. Optimized database performance and ensured data integrity.",
+      skills: ["MongoDB", "SQL", "Python", "ETL", "Data Pipelines"]
+    },
+    {
+      title: "Full-Stack Developer",
+      company: "Curved Pixel LLP",
+      period: "Dec 2020 - Sep 2022",
+      description: "Designed and developed web applications with focus on front-end UI/UX and back-end functionality. Worked with RESTful APIs, database design, and application deployment.",
+      skills: ["JavaScript", "Node.js", "React", "MongoDB", "REST APIs"]
     }
   ];
   
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      period: "2012 - 2016",
-      description: "Focused on web technologies and user interface design. Graduated with honors.",
-      courses: ["Web Development", "User Interface Design", "Database Systems", "Algorithms"]
+      degree: "Master of Science in Computer Science",
+      institution: "University of Massachusetts, Boston",
+      period: "2022 - 2024",
+      description: "Focused on machine learning, artificial intelligence, and data analytics. Graduated with distinction.",
+      courses: ["Machine Learning", "Deep Learning", "Computer Vision", "Natural Language Processing"]
     },
     {
-      degree: "Frontend Development Certificate",
-      institution: "Online Tech Academy",
-      period: "2015",
-      description: "Intensive program covering modern frontend technologies and frameworks.",
-      courses: ["React", "JavaScript Advanced", "Responsive Design"]
+      degree: "Bachelor of Technology in Information Technology",
+      institution: "Kalyani University, India",
+      period: "2016 - 2020",
+      description: "Studied information technology with focus on programming, algorithms, and data structures.",
+      courses: ["Data Structures", "Algorithms", "Database Systems", "Web Development"]
     }
   ];
   

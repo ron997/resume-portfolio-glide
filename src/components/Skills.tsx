@@ -5,19 +5,20 @@ import { Card } from "@/components/ui/card";
 
 const Skills = () => {
   const technicalSkills = [
-    { name: "HTML/CSS", level: 90 },
-    { name: "JavaScript", level: 85 },
-    { name: "React", level: 80 },
-    { name: "TypeScript", level: 75 },
-    { name: "Node.js", level: 70 },
-    { name: "UI/UX Design", level: 85 }
+    { name: "Python", level: 95 },
+    { name: "Scikit-Learn", level: 90 },
+    { name: "TensorFlow/PyTorch", level: 85 },
+    { name: "Data Analysis (Pandas/NumPy)", level: 90 },
+    { name: "MongoDB/SQL", level: 85 },
+    { name: "Flask API/AWS", level: 80 },
+    { name: "OpenCV/NLP", level: 75 }
   ];
 
   const softSkills = [
-    { name: "Communication", level: 90 },
-    { name: "Teamwork", level: 85 },
     { name: "Problem Solving", level: 95 },
-    { name: "Time Management", level: 80 }
+    { name: "Communication", level: 90 },
+    { name: "Research", level: 90 },
+    { name: "Project Management", level: 85 }
   ];
 
   return (
@@ -27,7 +28,7 @@ const Skills = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
           <div className="w-20 h-1 bg-portfolio-primary mx-auto"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
-            I've developed a diverse set of skills throughout my career. Here's a quick overview of my technical proficiencies and soft skills.
+            I've developed expertise in data science, machine learning, and software development throughout my career. Here's an overview of my technical proficiencies and soft skills.
           </p>
         </div>
 

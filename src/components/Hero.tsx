@@ -17,10 +17,10 @@ const Hero = () => {
         <div className="text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="text-portfolio-primary">Hello, I'm</span>
-            <div className="mt-2">Your Name</div>
+            <div className="mt-2">Rounak Burman</div>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Front-end Developer & UX Designer creating beautiful, functional web experiences
+            Data Science Consultant at TCG Digital specialized in ML/AI and Data Analytics
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

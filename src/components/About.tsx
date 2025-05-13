@@ -14,24 +14,23 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <p className="text-lg text-gray-700 mb-6">
-              Hello! I'm a passionate web developer with expertise in modern front-end technologies. 
-              With a strong foundation in design principles and coding best practices, I create 
-              responsive, user-friendly websites and applications.
+              Hello! I'm a passionate Data Science Consultant with expertise in Machine Learning, AI, and 
+              data analytics. With a strong foundation in computer science and information technology, I develop 
+              data-driven solutions and models for real-world problems.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              My journey in web development started 5 years ago, and since then, I've worked 
-              on various projects ranging from small business websites to complex web applications.
-              I'm constantly learning and adapting to new technologies to stay at the forefront 
-              of web development.
+              My journey in data science started during my bachelor's degree and has evolved through various 
+              roles in database engineering, full-stack development, and specialized data science projects. 
+              I'm constantly exploring new algorithms and techniques to stay at the cutting edge of AI and ML.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-8">
               <Card className="p-4 shadow-md">
                 <h3 className="font-bold text-lg mb-2">Education</h3>
-                <p className="text-gray-600">Bachelor's in Computer Science</p>
+                <p className="text-gray-600">MS in Computer Science, UMass Boston</p>
               </Card>
               <Card className="p-4 shadow-md">
                 <h3 className="font-bold text-lg mb-2">Experience</h3>
-                <p className="text-gray-600">5+ Years in Web Development</p>
+                <p className="text-gray-600">Data Science Consultant at TCG Digital</p>
               </Card>
             </div>
           </div>
