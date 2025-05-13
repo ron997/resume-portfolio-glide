@@ -8,8 +8,8 @@ const Footer = () => {
     <footer className="bg-portfolio-dark py-8 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h3 className="text-xl font-bold mb-2">Your Name</h3>
-          <p className="text-gray-300 mb-4">Web Developer & Designer</p>
+          <h3 className="text-xl font-bold mb-2">Rounak Burman</h3>
+          <p className="text-gray-300 mb-4">Data Science Intern at TCG Digital</p>
           
           <div className="flex justify-center space-x-4 mb-6">
             {/* Social media links would go here */}
@@ -19,8 +19,7 @@ const Footer = () => {
           </div>
           
           <div className="text-sm text-gray-400">
-            <p>&copy; {currentYear} Your Name. All rights reserved.</p>
-            <p className="mt-1">Made with ❤️ using React & TailwindCSS</p>
+            <p>&copy; {currentYear} Rounak Burman. All rights reserved.</p>
           </div>
         </div>
       </div>
