@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/", // Changed from "/portfolio/" to "/" for root domain deployment
+  base: "/", // Correctly set with trailing slash for root domain deployment
   plugins: [
     react(),
     mode === 'development' &&
@@ -19,6 +19,15 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    outDir: "dist",
+    // Ensure we generate a 404.html that's a copy of index.html for SPA routing on GitHub Pages
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
     },
   },
 }));
