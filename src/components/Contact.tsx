@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -65,7 +66,7 @@ const Contact = () => {
             <div className="space-y-6">
               <div>
                 <h4 className="font-semibold text-lg">Email</h4>
-                <p className="text-gray-600">rounak.burman@tcgdigital.com</p>
+                <p className="text-gray-600">rounak42.rb@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-semibold text-lg">Phone</h4>
@@ -80,7 +81,7 @@ const Contact = () => {
             <div className="mt-10">
               <h3 className="text-2xl font-bold mb-6 text-portfolio-primary">Follow Me</h3>
               <div className="flex space-x-4">
-                <Button variant="outline" size="icon" className="h-10 w-10 p-2" onClick={() => window.open('https://linkedin.com', '_blank')}>
+                <Button variant="outline" size="icon" className="h-10 w-10 p-2" onClick={() => window.open('https://linkedin.com/in/rounak-burman', '_blank')}>
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Button>

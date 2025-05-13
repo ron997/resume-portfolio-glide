@@ -20,7 +20,7 @@ const Hero = () => {
             <div className="mt-2">Rounak Burman</div>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Data Science Intern at TCG Digital specialized in ML/AI, Computer Vision and Data Analytics
+            Data Science Professional specializing in ML/AI, Computer Vision and Data Analytics
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -34,13 +34,13 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               onClick={() => {
-                const resumeSection = document.getElementById('resume');
-                if (resumeSection) {
-                  resumeSection.scrollIntoView({ behavior: 'smooth' });
+                const projectsSection = document.getElementById('projects');
+                if (projectsSection) {
+                  projectsSection.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
             >
-              View Resume
+              View Projects
             </Button>
           </div>
         </div>

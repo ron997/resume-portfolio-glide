@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { toast } from "@/hooks/use-toast";
 
 const Resume = () => {
   const workExperience = [
@@ -12,29 +13,29 @@ const Resume = () => {
       title: "Data Science Intern",
       company: "TCG Digital",
       period: "Sep 2023 - Present",
-      description: "Working on data science and machine learning projects, developing AI models, and performing advanced data analytics for clients across various industries.",
-      skills: ["Python", "TensorFlow", "Scikit-Learn", "Data Analysis", "Machine Learning"]
+      description: "Streamlining and enhancing the image data pipeline for ML algorithms, resulting in improved accuracy of dent and scratch detection in vehicles. Reducing data processing time by over 30% and enhancing the dataset quality. Collaborating with cross-functional teams to implement computer vision solutions across multiple business domains.",
+      skills: ["Python", "TensorFlow", "Computer Vision", "Data Pipeline", "Machine Learning", "OpenCV"]
     },
     {
       title: "Project Assistant",
       company: "University of Massachusetts Boston",
-      period: "Feb 2023 - May 2023",
-      description: "Implemented gaze tracking algorithms for multi-modal deep learning project using PyTorch and OpenCV, achieving over 90% accuracy in eye detection and gaze prediction.",
-      skills: ["PyTorch", "OpenCV", "Python", "Research", "Deep Learning"]
+      period: "Feb 2023 - Jul 2023",
+      description: "Developed and implemented gaze tracking algorithms achieving 90% accuracy in eye detection. Processed over 10GB of video data to extract user behavior patterns using deep learning and computer vision techniques. Created optimized data pipelines for multi-modal machine learning models.",
+      skills: ["PyTorch", "OpenCV", "Python", "Deep Learning", "Computer Vision", "Data Analysis"]
     },
     {
       title: "Database Engineer Intern",
       company: "Lynchval Systems",
-      period: "May 2023 - Aug 2023",
-      description: "Developed and maintained database systems, created ETL processes, and built data pipelines for financial applications. Optimized database performance and ensured data integrity.",
-      skills: ["MongoDB", "SQL", "Python", "ETL", "Data Pipelines"]
+      period: "Aug 2022 - May 2023",
+      description: "Enhanced database performance by optimizing SQL queries, reducing execution time by 25%. Developed and maintained ETL pipelines for financial applications ensuring data integrity and consistency. Created and documented database schemas and procedures for team-wide use.",
+      skills: ["MongoDB", "SQL", "Python", "ETL", "Data Pipelines", "Database Design"]
     },
     {
       title: "Full-Stack Developer",
       company: "Curved Pixel LLP",
       period: "Dec 2020 - Sep 2022",
-      description: "Designed and developed web applications with focus on front-end UI/UX and back-end functionality. Worked with RESTful APIs, database design, and application deployment.",
-      skills: ["JavaScript", "Node.js", "React", "MongoDB", "REST APIs"]
+      description: "Led the development of multiple client-facing web applications from concept to deployment. Improved API performance by 40% through code optimization and implementing efficient caching strategies. Designed and integrated database schemas, resulting in improved data management and retrieval efficiency.",
+      skills: ["JavaScript", "Node.js", "React", "MongoDB", "REST APIs", "Express.js"]
     }
   ];
   
@@ -43,17 +44,25 @@ const Resume = () => {
       degree: "Master of Science in Computer Science",
       institution: "University of Massachusetts, Boston",
       period: "2022 - 2024",
-      description: "Focused on machine learning, artificial intelligence, and data analytics. Graduated with distinction.",
-      courses: ["Machine Learning", "Deep Learning", "Computer Vision", "Natural Language Processing"]
+      description: "GPA: 3.9/4.0. Focus on machine learning, artificial intelligence, and data analytics.",
+      courses: ["Machine Learning", "Deep Learning", "Computer Vision", "Natural Language Processing", "Big Data Analytics"]
     },
     {
       degree: "Bachelor of Technology in Information Technology",
       institution: "Kalyani University, India",
       period: "2016 - 2020",
-      description: "Studied information technology with focus on programming, algorithms, and data structures.",
-      courses: ["Data Structures", "Algorithms", "Database Systems", "Web Development"]
+      description: "GPA: 9.02/10.0. Focus on programming, algorithms, and data structures.",
+      courses: ["Data Structures", "Algorithms", "Database Systems", "Web Development", "Software Engineering"]
     }
   ];
+
+  const handleDownloadResume = () => {
+    // In a real implementation, this would be a direct link to your resume file
+    toast({
+      title: "Resume download",
+      description: "Your resume would start downloading now.",
+    });
+  };
   
   return (
     <section id="resume" className="py-20 bg-white">
@@ -64,7 +73,10 @@ const Resume = () => {
         </div>
         
         <div className="mb-8 text-center">
-          <Button className="bg-portfolio-primary hover:bg-portfolio-secondary">
+          <Button 
+            className="bg-portfolio-primary hover:bg-portfolio-secondary"
+            onClick={handleDownloadResume}
+          >
             <ArrowDown className="mr-2 h-4 w-4" /> Download Resume
           </Button>
         </div>

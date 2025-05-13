@@ -14,14 +14,14 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <p className="text-lg text-gray-700 mb-6">
-              Hello! I'm a passionate Data Science Intern with expertise in Machine Learning, AI, and 
-              data analytics. With a strong foundation in computer science and information technology, I develop 
-              data-driven solutions and models for real-world problems.
+              Hello! I'm a dedicated Data Science professional with expertise in Machine Learning, Computer Vision, and 
+              data analytics. With a Master's degree in Computer Science from UMass Boston and practical experience 
+              across various roles, I develop data-driven solutions for complex real-world problems.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              My journey in data science started during my bachelor's degree and has evolved through various 
-              roles in database engineering, full-stack development, and specialized data science projects. 
-              I'm constantly exploring new algorithms and techniques to stay at the cutting edge of AI and ML.
+              My technical focus includes developing optimized ML pipelines, implementing computer vision algorithms, 
+              and creating efficient data processing systems. I'm passionate about using AI to solve challenging 
+              business problems and continuously enhancing my skills in cutting-edge technologies.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-8">
               <Card className="p-4 shadow-md">

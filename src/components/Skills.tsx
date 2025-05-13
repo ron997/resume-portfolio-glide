@@ -6,20 +6,23 @@ import { Card } from "@/components/ui/card";
 const Skills = () => {
   const technicalSkills = [
     { name: "Python", level: 95 },
-    { name: "Scikit-Learn", level: 90 },
     { name: "TensorFlow/PyTorch", level: 90 },
+    { name: "Computer Vision (OpenCV)", level: 90 },
     { name: "Data Analysis (Pandas/NumPy)", level: 90 },
-    { name: "MongoDB/SQL", level: 70 },
-    { name: "Flask API/AWS", level: 80 },
-    { name: "NLP", level: 80 },
-    { name: "Computer Vision", level: 85 }
+    { name: "Machine Learning", level: 90 },
+    { name: "MongoDB/SQL", level: 80 },
+    { name: "Flask/Django", level: 75 },
+    { name: "React/JavaScript", level: 80 },
+    { name: "Natural Language Processing", level: 80 },
+    { name: "AWS/Cloud Services", level: 75 }
   ];
 
   const softSkills = [
     { name: "Problem Solving", level: 95 },
     { name: "Communication", level: 90 },
-    { name: "Research", level: 90 },
-    { name: "Project Management", level: 85 }
+    { name: "Research & Analysis", level: 90 },
+    { name: "Project Management", level: 85 },
+    { name: "Team Collaboration", level: 85 }
   ];
 
   return (
@@ -29,7 +32,7 @@ const Skills = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
           <div className="w-20 h-1 bg-portfolio-primary mx-auto"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
-            I've developed expertise in data science, machine learning, and software development throughout my career. Here's an overview of my technical proficiencies and soft skills.
+            I've developed a strong expertise in data science, machine learning, and software development throughout my career. Here's an overview of my technical proficiencies and soft skills.
           </p>
         </div>
 

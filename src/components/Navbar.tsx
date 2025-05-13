@@ -34,9 +34,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="text-xl font-bold text-portfolio-primary">Portfolio</div>
+        <div className="text-xl font-bold text-portfolio-primary">Rounak Burman</div>
         <div className="hidden md:flex space-x-6">
-          {["about", "skills", "resume", "contact"].map((item) => (
+          {["about", "skills", "projects", "resume", "contact"].map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
