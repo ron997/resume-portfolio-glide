@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
-import { LinkedIn, Github, Twitter } from "lucide-react";
+import { Linkedin, Github, Twitter } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -82,7 +81,7 @@ const Contact = () => {
               <h3 className="text-2xl font-bold mb-6 text-portfolio-primary">Follow Me</h3>
               <div className="flex space-x-4">
                 <Button variant="outline" size="icon" className="h-10 w-10 p-2" onClick={() => window.open('https://linkedin.com', '_blank')}>
-                  <LinkedIn className="h-5 w-5" />
+                  <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Button>
                 <Button variant="outline" size="icon" className="h-10 w-10 p-2" onClick={() => window.open('https://github.com', '_blank')}>
