@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/", // Correctly set with trailing slash for root domain deployment
+  base: "./", // Using relative path for better GitHub Pages compatibility
   plugins: [
     react(),
     mode === 'development' &&
@@ -23,10 +23,13 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: "dist",
-    // Ensure we generate a 404.html that's a copy of index.html for SPA routing on GitHub Pages
+    // Ensure proper asset paths and SPA routing
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
+      },
+      output: {
+        manualChunks: undefined,
       },
     },
   },
