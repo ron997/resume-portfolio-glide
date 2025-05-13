@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/", // This will be replaced with your repo name in the deployment script
+  base: "/portfolio/", // Changed to match the GitHub repository name
   plugins: [
     react(),
     mode === 'development' &&
