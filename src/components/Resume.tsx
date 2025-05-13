@@ -9,7 +9,7 @@ import { ArrowDown } from "lucide-react";
 const Resume = () => {
   const workExperience = [
     {
-      title: "Data Science Consultant",
+      title: "Data Science Intern",
       company: "TCG Digital",
       period: "Sep 2023 - Present",
       description: "Working on data science and machine learning projects, developing AI models, and performing advanced data analytics for clients across various industries.",

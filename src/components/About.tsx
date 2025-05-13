@@ -14,7 +14,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <p className="text-lg text-gray-700 mb-6">
-              Hello! I'm a passionate Data Science Consultant with expertise in Machine Learning, AI, and 
+              Hello! I'm a passionate Data Science Intern with expertise in Machine Learning, AI, and 
               data analytics. With a strong foundation in computer science and information technology, I develop 
               data-driven solutions and models for real-world problems.
             </p>
@@ -30,7 +30,7 @@ const About = () => {
               </Card>
               <Card className="p-4 shadow-md">
                 <h3 className="font-bold text-lg mb-2">Experience</h3>
-                <p className="text-gray-600">Data Science Consultant at TCG Digital</p>
+                <p className="text-gray-600">Data Science Intern at TCG Digital</p>
               </Card>
             </div>
           </div>

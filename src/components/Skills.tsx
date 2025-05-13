@@ -7,11 +7,12 @@ const Skills = () => {
   const technicalSkills = [
     { name: "Python", level: 95 },
     { name: "Scikit-Learn", level: 90 },
-    { name: "TensorFlow/PyTorch", level: 85 },
+    { name: "TensorFlow/PyTorch", level: 90 },
     { name: "Data Analysis (Pandas/NumPy)", level: 90 },
-    { name: "MongoDB/SQL", level: 85 },
+    { name: "MongoDB/SQL", level: 70 },
     { name: "Flask API/AWS", level: 80 },
-    { name: "OpenCV/NLP", level: 75 }
+    { name: "NLP", level: 80 },
+    { name: "Computer Vision", level: 85 }
   ];
 
   const softSkills = [
