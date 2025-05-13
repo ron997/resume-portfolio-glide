@@ -12,30 +12,30 @@ const Resume = () => {
     {
       title: "Data Science Intern",
       company: "TCG Digital",
-      period: "Sep 2023 - Present",
-      description: "Streamlining and enhancing the image data pipeline for ML algorithms, resulting in improved accuracy of dent and scratch detection in vehicles. Reducing data processing time by over 30% and enhancing the dataset quality. Collaborating with cross-functional teams to implement computer vision solutions across multiple business domains.",
-      skills: ["Python", "TensorFlow", "Computer Vision", "Data Pipeline", "Machine Learning", "OpenCV"]
+      period: "Sep 2024 - Present",
+      description: "Implemented computer vision and fine-tuned ML models for corrosion detection in metal pipelines with an accuracy of over 90%. Applied computer vision to detect litter and spillage in real time footage using deepsort and YOLO with an accuracy of over 90%. Applied Whisper API and IndicParler TTS to effectively translate soccer commentary from English to Hindi and 3+ computer vision models like YOLOv8 and YOLOv8x-pose to perform pose estimation, keypoint detection and object tracking. Applied an embedding model (Google BERT) and to compare entries in two tables of patient data and set custom weightage scores on the fields to perform data deduplication and store them in a master table with an accuracy of 95%. Extracted and encoded pictogram data from pdf files of two versions and created a new pdf file with new entries using Mistral OCR with an accuracy of over 98%.",
+      skills: ["Python", "TensorFlow", "Computer Vision", "Machine Learning", "YOLO", "BERT", "OCR", "Whisper API"]
     },
     {
-      title: "Project Assistant",
-      company: "University of Massachusetts Boston",
-      period: "Feb 2023 - Jul 2023",
-      description: "Developed and implemented gaze tracking algorithms achieving 90% accuracy in eye detection. Processed over 10GB of video data to extract user behavior patterns using deep learning and computer vision techniques. Created optimized data pipelines for multi-modal machine learning models.",
-      skills: ["PyTorch", "OpenCV", "Python", "Deep Learning", "Computer Vision", "Data Analysis"]
+      title: "Project Assistant, Full-Stack Development Projects",
+      company: "UMass Boston",
+      period: "Feb 2024 - May 2024",
+      description: "Automated the extraction and summarization of medical research articles in a web app using Tensorflow, Gensim and BERT, increasing content accessibility for healthcare professionals by 25%. Developed a desktop app for labeling VAS Data using PyQt5 leading to 15% more accuracy in labeling.",
+      skills: ["TensorFlow", "Gensim", "BERT", "PyQt5", "Web Development", "NLP"]
     },
     {
       title: "Database Engineer Intern",
       company: "Lynchval Systems",
-      period: "Aug 2022 - May 2023",
-      description: "Enhanced database performance by optimizing SQL queries, reducing execution time by 25%. Developed and maintained ETL pipelines for financial applications ensuring data integrity and consistency. Created and documented database schemas and procedures for team-wide use.",
-      skills: ["MongoDB", "SQL", "Python", "ETL", "Data Pipelines", "Database Design"]
+      period: "May 2023 - Aug 2025",
+      description: "Enhanced Predictive analytics by optimizing SQL database queries, reducing data interval times by 15%.",
+      skills: ["SQL", "Database Optimization", "Predictive Analytics"]
     },
     {
       title: "Full-Stack Developer",
       company: "Curved Pixel LLP",
       period: "Dec 2020 - Sep 2022",
-      description: "Led the development of multiple client-facing web applications from concept to deployment. Improved API performance by 40% through code optimization and implementing efficient caching strategies. Designed and integrated database schemas, resulting in improved data management and retrieval efficiency.",
-      skills: ["JavaScript", "Node.js", "React", "MongoDB", "REST APIs", "Express.js"]
+      description: "Led the development of 5+ dynamic web pages and 3 complex APIs using Python, React, Javascript, HTML, CSS, MUI, and Flask, enhancing overall system efficiency and user engagement. Improved site response time by 20% through optimized JavaScript and CSS code.",
+      skills: ["JavaScript", "React", "Python", "Flask", "HTML", "CSS", "MUI", "API Development"]
     }
   ];
   
@@ -44,14 +44,14 @@ const Resume = () => {
       degree: "Master of Science in Computer Science",
       institution: "University of Massachusetts, Boston",
       period: "2022 - 2024",
-      description: "GPA: 3.9/4.0. Focus on machine learning, artificial intelligence, and data analytics.",
+      description: "Graduation Date: May 2024",
       courses: ["Machine Learning", "Deep Learning", "Computer Vision", "Natural Language Processing", "Big Data Analytics"]
     },
     {
       degree: "Bachelor of Technology in Information Technology",
       institution: "Kalyani University, India",
       period: "2016 - 2020",
-      description: "GPA: 9.02/10.0. Focus on programming, algorithms, and data structures.",
+      description: "Graduation Date: Oct 2020",
       courses: ["Data Structures", "Algorithms", "Database Systems", "Web Development", "Software Engineering"]
     }
   ];
