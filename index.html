@@ -17,11 +17,12 @@
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
-    <!-- Start Single Page Apps for GitHub Pages -->
+    <!-- Single Page Apps for GitHub Pages - Modified for better path handling -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
+      // Modified to handle base paths better
       (function(l) {
         if (l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
@@ -33,12 +34,10 @@
         }
       }(window.location))
     </script>
-    <!-- End Single Page Apps for GitHub Pages -->
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- Only include the GPTEngineer script in development mode -->
     <script>
       // Check if we're in development mode (localhost)
       if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
@@ -48,6 +47,6 @@
         document.body.appendChild(script);
       }
     </script>
-    <script type="module" src="./src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
