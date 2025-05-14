@@ -43,10 +43,22 @@ jobs:
       - name: Create .nojekyll file
         run: |
           touch dist/.nojekyll
+      - name: Check if _headers exists
+        run: |
+          if [ -f dist/_headers ]; then
+            echo "Headers file exists:"
+            cat dist/_headers
+          else
+            echo "No _headers file found, creating one"
+            echo "/*" > dist/_headers
+            echo "  Content-Type: application/javascript; charset=utf-8" >> dist/_headers
+          fi
       - name: Copy headers file (if exists)
         run: |
           if [ -f .github/headers ]; then
             cp .github/headers dist/_headers
+            echo "Copied custom headers file:"
+            cat dist/_headers
           fi
       - name: Debug output of build directory
         run: |

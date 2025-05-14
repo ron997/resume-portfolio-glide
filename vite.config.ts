@@ -10,7 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "",  // Empty string for relative paths
+  // Use empty string for relative paths or "/" for absolute paths at root
+  base: "",
   plugins: [
     react(),
     mode === 'development' &&
