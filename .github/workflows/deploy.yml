@@ -43,6 +43,17 @@ jobs:
       - name: Create .nojekyll file
         run: |
           touch dist/.nojekyll
+      - name: Copy headers file (if exists)
+        run: |
+          if [ -f .github/headers ]; then
+            cp .github/headers dist/_headers
+          fi
+      - name: Debug output of build directory
+        run: |
+          echo "Listing build directory contents:"
+          ls -la dist/
+          echo "Content of index.html:"
+          cat dist/index.html | head -n 20
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

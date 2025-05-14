@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "./", // Using relative path for better GitHub Pages compatibility
+  base: "",  // Empty string for relative paths
   plugins: [
     react(),
     mode === 'development' &&
@@ -23,13 +23,15 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: "dist",
-    // Ensure proper asset paths and SPA routing
+    assetsInlineLimit: 0, // Prevent inlining assets
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
       },
       output: {
-        manualChunks: undefined,
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]'
       },
     },
   },
