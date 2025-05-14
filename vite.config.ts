@@ -10,8 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // Setting base to "/" for absolute paths at root
-  base: "/",
+  base: "",
   plugins: [
     react(),
     mode === 'development' &&
