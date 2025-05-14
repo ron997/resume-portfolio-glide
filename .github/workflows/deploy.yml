@@ -37,6 +37,8 @@ jobs:
       - name: Build with Vite
         run: |
           npm run build
+        env:
+          BASE_URL: /resume-portfolio-glide/
       - name: Copy index.html to 404.html
         run: |
           cp dist/index.html dist/404.html
@@ -66,6 +68,8 @@ jobs:
           ls -la dist/
           echo "Content of index.html:"
           cat dist/index.html | head -n 20
+          echo "Base path being used:"
+          grep -r "base" dist/index.html || echo "No base path found in index.html"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
